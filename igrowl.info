@@ -1,0 +1,8 @@
+name = iGrowl
+description = iGrowl makes the iGrowl JS library available for use in your Drupal site.
+core = 7.x
+
+dependencies[] = libraries (>=7.x-2.0)
+dependencies[] = animate_css
+
+scripts[] = ajax_command_igrowl.js
