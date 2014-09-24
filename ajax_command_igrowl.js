@@ -1,9 +1,8 @@
-(function ($) {
+(function ($, Drupal) {
   // add a custom ajax command to spawn an iGrowl alert.
-  Drupal.ajax = Drupal.ajax || {};
-  Drupal.ajax.prototype.commands = Drupal.ajax.prototype.commands || {};
-
-  Drupal.ajax.prototype.commands.igrowl = function (ajax, response, status) {
-    $.iGrowl(response.options);
+  if (typeof Drupal.ajax !== 'undefined') {
+    Drupal.ajax.prototype.commands.igrowl = function (ajax, response, status) {
+      $.iGrowl(response.options);
+    }
   }
-})(jQuery);
+})(jQuery, Drupal);
