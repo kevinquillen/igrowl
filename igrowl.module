@@ -55,26 +55,26 @@ function igrowl_ajax_command_growl($options) {
 function igrowl_default_options() {
   return array(
     'type' => 'info',
-		'title' => NULL,
-		'message' => NULL,
-		'icon' => NULL,
-    'small' => false,
-		'delay' => 2500,
-		'spacing' => 30,
-		'placement' => array(
+    'title' => NULL,
+    'message' => NULL,
+    'icon' => NULL,
+    'small' => FALSE,
+    'delay' => 2500,
+    'spacing' => 30,
+    'placement' => array(
       'x' => 'right',
-			'y' => 'top'
+      'y' => 'top'
     ),
-		'offset' => array(
+    'offset' => array(
       'x' => 20,
-			'y' => 20
+      'y' => 20
     ),
-		'animation' => true,
-		'animShow' => 'bounceIn',
-		'animHide' => 'bounceOut',
-		'onShow' => NULL,
-		'onShown' => NULL,
-		'onHide' => NULL,
-		'onHidden' => NULL,
+    'animation' => TRUE,
+    'animShow' => 'bounceIn',
+    'animHide' => 'bounceOut',
+    'onShow' => NULL,
+    'onShown' => NULL,
+    'onHide' => NULL,
+    'onHidden' => NULL,
   );
 }
